@@ -7,3 +7,5 @@ Services Offered
 * My analysis was that casual riders value fun, warm weather and the weekends. Casual riders go on longer rides on average and median. While members are more consistent. Going to work, they use it as a mode of transportation. 
 * I advised the marketing team to create a weekend and summer deal. We can have them as bi-annual members or weekend member. This will create a sales funnel for casual riders to eventually become full members. 
 * I gave further recommendations to market the warm weather and having fun, as casual riders value these metrics the most, using social media, their own built in app and on their bikes. 
+
+![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Member%20Weekday.png)
