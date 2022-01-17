@@ -8,4 +8,4 @@ Services Offered
 * I advised the marketing team to create a weekend and summer deal. We can have them as bi-annual members or weekend member. This will create a sales funnel for casual riders to eventually become full members. 
 * I gave further recommendations to market the warm weather and having fun, as casual riders value these metrics the most, using social media, their own built in app and on their bikes. 
 
-![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Member%20Weekday.png)
+![](/Images/Member%20Weekday.png)
