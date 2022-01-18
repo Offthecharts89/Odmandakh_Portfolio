@@ -2,14 +2,14 @@
 Services Offered
 
 # About me
-Unique
+#### Unique
 If you don’t find me working out your gonna find me nerding out about the world. Knowing your history and a good story is all I live for. Exploring the hidden world inside a page or a dataset that only you can see it one of the most exhilarating things to me and yes I’m going to want to tell you all about it if I find something really interesting so we can me amazed and nerd our together.
 
-My Background
+#### My Background
 My name is Oddie I’m out there and wear my heart on my sleeve, coming from Mongolia to the UK at 9. I’ve had to tough it out and find my way. Always looking to improve my skillset and bring real value. I need to know that I have made your job easier and brought value to you or I won’t be satisfied with my work. Let’s Jump on an initial 10-minute call (free of charge), so that we can discuss your project in more detail and identify how my skillset will work best for you and provide immense value to your organization as well.
 
-My Credentials
-Head data manager of Funko’s Pricing using Excel & SQL Server for all of Funko’s 1,000s of customers and 10,000s products. Analysed the current Pricing data for Senior Management, creating data visualisations and pivot tables to direct the pricing strategy for Funko Europe. Created pricing templates to streamline pricing processes for the entire Sales & CS department. Using Excel’s VBA coding, Pivot tables, vlookups and calculations with iferror 
+#### My Credentials
+Head data manager of Pricing at Funko, using Excel & SQL Server for all of Funko’s 1,000s of customers and 10,000s products. Analysed the current Pricing data for Senior Management, creating data visualisations and pivot tables to direct the pricing strategy for Funko Europe. Created pricing templates to streamline pricing processes for the entire Sales & CS department. Using Excel’s VBA coding, Pivot tables, vlookups and calculations with iferror 
 
 Have a masters in Economics with distinction. Using OLS regression models with panel data created an economic model measuring the link between economic growth and national currencies. Was able to create a model that was statistically significant and homoscedastic.
 
