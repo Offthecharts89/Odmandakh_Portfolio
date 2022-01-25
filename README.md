@@ -22,8 +22,29 @@ Have a masters in Economics with distinction. Using OLS regression models with p
 * My analysis was that casual riders value fun, warm weather and the weekends. Casual riders go on longer rides on average and median. While members are more consistent. Going to work, they use it as a mode of transportation. 
 * I advised the marketing team to create a weekend and summer deal. We can have them as bi-annual members or weekend member. This will create a sales funnel for casual riders to eventually become full members. 
 * I gave further recommendations to market the warm weather and having fun, as casual riders value these metrics the most, using social media, their own built in app and on their bikes. 
+* (For the full report you can download it above or click the link in the title)
+
+### Aggregated the data and performed calculations to find relationships or trends.
+![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/calctable.png)
+
+Visualized the data in weeks and months. Found a trend that there would be a surge in rides over the weekend and in the summer months 
+![](Images/Weekday%20Total.png)  ![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Month%20Total.png)
+
+### Compared casual riders to member riders to understand the difference between them.
 ![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Calc.png)
 
-![](Images/Weekday%20Total.png)
+caual riders ride longer in all metrics
 
-![](Images/Member%20Weekday.png)
+
+Compare months
+
+![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Casual%20vs%20Member%20Month.png)
+
+## Top Three Recommendations
+
+* Create a weekend and bi-annual members package for casual riders to use. This will affectively make them half members.
+* Market their riders for fun and warm weather. Casual riders seem to value these metrics the most.
+* Use social media, their own built in app and their bikes to promote the deal. 
+
+
+# Master's Dissertation on Economic Growth and National Currencies
