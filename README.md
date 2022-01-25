@@ -58,6 +58,7 @@ Casual Riders are much more seasonal in their behaviour. The weather plays a big
 * created and wrote the code for economic models using panel data, showing actionable insights using pivot tables and regression tables.  
 * Researching the data on the current account balance and national currencies on economic growth in the UK and Japan.
 * Concluding that economies would have to have an approach that would limit large fluctuations in their current account balance and their exchange rates themselves, rather than having a policy that can absorb the shocks.
+* Achieved a Model that was Statistically significant and homoscedastic
 * (For the full report you can download it above or click the link in the title)
 
 ### Research Question
@@ -68,4 +69,11 @@ Would Stabilizing National Currencies Link to Higher Economic Growth?
 
 ![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Economic%20Model.png)
 
-Ran a pooled OLS linear regression. My was to plan is to compare the two countries of the United Kingdom and Japan. In terms of their GDP per capita and how sensitive their economies are to current account and exchange rate changes. 
+My plan was to compare the two countries of the United Kingdom and Japan. In terms of their GDP per capita and how sensitive their economies are to current account and exchange rate changes. 
+
+I ran a pooled OLS with lag independent variables to solve for the autoregression problem. My first model I had put all my independant variables to a lag of 1. I came up with some interesting results. I later decided to run a robust regression to lower the influence of any outliers in my data and resulted in a higher R-squared value. 
+![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Uk%20data.png)
+![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Japan%20Data_REC.png)
+
+#### Test for Heteroskedasticity & Normality
+![](
