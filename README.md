@@ -13,7 +13,7 @@ Head data manager of Pricing at Funko, using Excel & SQL Server for all of Funko
 
 Have a masters in Economics with distinction. Using OLS regression models with panel data created an economic model measuring the link between economic growth and national currencies. Was able to create a model that was statistically significant and homoscedastic.
 
-# Converting Casual Riders to Members Riders: Chicago Bike Data
+# [Converting Casual Riders to Members Riders: Chicago Bike Data](https://github.com/Offthecharts89/Chicago-Bike-Data-Project)
 * Working with dataset with 100 million datapoints.  
 * Tasked by the marketing team of Cyclistic to do an exploratory analysis of their user’s bike data. 
 * Giving recommendation from my analysis of how Cyclistic can convert their casual users to full members to increase revenue, as it was previously concluded by Cyclist’s finance team that member riders are the bulk of their revenue and that they should increase the number of member riders.
