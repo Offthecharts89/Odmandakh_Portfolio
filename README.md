@@ -14,7 +14,7 @@ Head data manager of Pricing at Funko, using Excel & SQL Server for all of Funko
 Have a masters in Economics with distinction. Using OLS regression models with panel data created an economic model measuring the link between economic growth and national currencies. Was able to create a model that was statistically significant and homoscedastic.
 
 # [Converting Casual Riders to Members Riders: Chicago Bike Data](https://github.com/Offthecharts89/Chicago-Bike-Data-Project)
-
+![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Excel%20Logo4.png)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/R%20Logo%20small.png)
 ### Summary
 * Working with dataset with 100 million datapoints.  
 * Tasked by the marketing team of Cyclistic to do an exploratory analysis of their user’s bike data. 
@@ -40,6 +40,8 @@ Compare months
 
 ![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Casual%20vs%20Member%20Month.png)
 
+Casual Riders are much more seasonal in their behaviour. The weather plays a big factor for them as casual rider dip below the bar in the winter months and even pass the bar in the summer months. While member riders are much more consistent. They stay within the bars for most of the year. I can also confidently say that creating a summer package for casual riders to enjoy will boost the companies revenue by creating bi-annual members that can lead onto to becoming full members in the future. 
+
 ## Top Three Recommendations
 
 * Create a weekend and bi-annual members package for casual riders to use. This will affectively make them half members.
@@ -47,4 +49,23 @@ Compare months
 * Use social media, their own built in app and their bikes to promote the deal. 
 
 
-# Master's Dissertation on Economic Growth and National Currencies
+
+
+# [Master's Dissertation on Economic Growth and National Currencies](https://github.com/Offthecharts89/Master-s-Dissertation-On-Economic-Growth-National-Currencies)
+![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Excel%20Logo4.png)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Stata%20Logo%20small.png)
+### Summary
+
+* created and wrote the code for economic models using panel data, showing actionable insights using pivot tables and regression tables.  
+* Researching the data on the current account balance and national currencies on economic growth in the UK and Japan.
+* Concluding that economies would have to have an approach that would limit large fluctuations in their current account balance and their exchange rates themselves, rather than having a policy that can absorb the shocks.
+* (For the full report you can download it above or click the link in the title)
+
+### Research Question
+
+Would Stabilizing National Currencies Link to Higher Economic Growth?
+
+### Model Specification
+
+![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Economic%20Model.png)
+
+Ran a pooled OLS linear regression. My was to plan is to compare the two countries of the United Kingdom and Japan. In terms of their GDP per capita and how sensitive their economies are to current account and exchange rate changes. 
