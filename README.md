@@ -9,7 +9,7 @@ If you don’t find me working out your gonna find me nerding out about the worl
 My name is Oddie I’m out there and wear my heart on my sleeve, coming from Mongolia to the UK at 9. I’ve had to tough it out and find my way. Always looking to improve my skillset and bring real value. I need to know that I have made your job easier and brought value to you or I won’t be satisfied with my work. Let’s Jump on an initial 10-minute call (free of charge), so that we can discuss your project in more detail and identify how my skillset will work best for you and provide immense value to your organization as well.
 
 #### My Credentials
-Head data manager of Pricing at Funko, using Excel & SQL Server for all of Funko’s 1,000s of customers and 10,000s products. Analysed the current Pricing data for Senior Management, creating data visualisations and pivot tables to direct the pricing strategy for Funko Europe. Created pricing templates to streamline pricing processes for the entire Sales & CS department. Using Excel’s VBA coding, Pivot tables, vlookups and calculations with iferror 
+Head data manager of Pricing at Funko, using Excel & SQL Server for all of Funko’s 1,000s of customers and 10,000s products. Analysed the current Pricing data for Senior Management, creating data visualisations and pivot tables to direct the pricing strategy for Funko Europe. Created pricing templates to streamline pricing processes for the entire Sales & CS department. Using Excel’s VBA coding, Pivot tables, vlookups and calculations with iferror statements.
 
 Have a masters in Economics with distinction. Using OLS regression models with panel data created an economic model measuring the link between economic growth and national currencies. Was able to create a model that was statistically significant and homoscedastic.
 
@@ -69,11 +69,36 @@ Would Stabilizing National Currencies Link to Higher Economic Growth?
 
 ![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Economic%20Model.png)
 
-My plan was to compare the two countries of the United Kingdom and Japan. In terms of their GDP per capita and how sensitive their economies are to current account and exchange rate changes. 
+My plan was to compare the two countries of the United Kingdom and Japan. In terms of their GDP per capita and how sensitive their economies are to current account and exchange rate shocks. 
 
 I ran a pooled OLS with lag independent variables to solve for the autoregression problem. My first model I had put all my independant variables to a lag of 1. I came up with some interesting results. I later decided to run a robust regression to lower the influence of any outliers in my data and resulted in a higher R-squared value. 
 ![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Uk%20data.png)
 ![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Japan%20Data_REC.png)
 
 #### Test for Heteroskedasticity & Normality
-![](
+![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Test%20for%20hetero_REC.png)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/test%20for%20normality_REC.png)
+When testing for heteroskedasticity, the model got a 0.8284. I reject the null hypothesis making my data homoscedastic. The variance in my data is around the same finite value allowing me to move on with my data. I got a .6697, I reject the null hypothesis, making my data normal. I tested for normality to see if my data set is well modelled by a normal distribution and to check if to see if any of the random variables underlying the data set are normally distributed. It is the random error in the relationship between the independent variables and the dependent variable in a regression model.
+
+#### Looking at GDP per Capita for Each Country
+![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/GDP%20per%20capita%20UK%20small.png)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/GDP%20per%20capita%20Japan%20small.png)
+
+(Y-axis in millions, International Monetary Fund, 2021)
+Even with the UK’s population steadily increasing. The GDP per capita has increased by 373.87% in the past 30 years with only a small dip in 2008. The Japanese has had growth in GDP per capita of 198.52% over the past 30 years. With a population on the slow decline in past few years. The UK outperformed Japan in terms of growth by 175.35%. Even with its larger initial population of 121 million compared to the UK’s 56 million.
+
+## Conclusion
+From the data analysis it was shown that even though the Japanese economy was less sensitive to fluctuations in their national currency as compared to the UK. Japan has faced a larger amount volatility in their growth with Japan falling into recession quiet frequently when compared to the UK. This has led to the conclusion that economies would have to have an approach that would limit large fluctuations in their current account balance and their exchange rates themselves rather than a having a policy that can absorb the shocks. A preventative measure to keep exchange rates and current account balance from being overly volatile seems more beneficial in the long term.  
+
+# [Creating a Dashboard for a HR Company in the UK](https://github.com/Offthecharts89/Dashboard-for-a-HR-Company)
+![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Excel%20Logo4.png)
+
+### Summary
+* Was tasked to create an interactive dashboard from last year's data on cases.
+* Asked to remain anonimous but was very kind and let me show the work I had done for them.
+* Scrubbed, cleaned and created a Dashboard using pivot tables 
+* (For the excel file you can download it above or click the link in the title)
+
+#### Dashboard:
+![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/HR_dashboard_REC.png)
+
+#### Raw Data
+![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/HR%20Raw%20Data%20small.png)
