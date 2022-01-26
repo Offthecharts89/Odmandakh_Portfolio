@@ -55,8 +55,8 @@ Casual Riders are much more seasonal in their behaviour. The weather plays a big
 ![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Excel%20Logo4.png)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Stata%20Logo%20small.png)
 ### Summary
 
-* created and wrote the code for economic models using panel data, showing actionable insights using pivot tables and regression tables.  
-* Researching the data on the current account balance and national currencies on economic growth in the UK and Japan.
+* created and wrote the code for economic models using panel data, running a OLS linear regression. Also used Pivot tables to find relationships and trends between the two nations economic performance.   
+* Researching the current literature and  on the current account balance and national currencies on economic growth in the UK and Japan.
 * Concluding that economies would have to have an approach that would limit large fluctuations in their current account balance and their exchange rates themselves, rather than having a policy that can absorb the shocks.
 * Achieved a Model that was Statistically significant and homoscedastic
 * (For the full report you can download it above or click the link in the title)
