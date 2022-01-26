@@ -2,20 +2,26 @@
 Services Offered
 
 # About me
-#### My Background
+## My Background
 My name is Oddie I’m out there and wear my heart on my sleeve, coming from Mongolia to the UK at 9. I’ve had to tough it out and find my way. Always looking to improve my skillset and bring real value. I need to know that I have made your job easier and brought value to you or I won’t be satisfied with my work. Let’s Jump on an initial 10-minute call (free of charge), so that we can discuss your project in more detail and identify how my skillset will work best for you and provide immense value to your organization as well.
 
-#### Who am I?
+## Who am I?
 If you don’t find me working out your gonna find me nerding out about the world. Knowing your history and a good story is all I live for. Exploring the hidden world inside a page or a dataset that only you can see it one of the most exhilarating things to me and yes I’m going to want to tell you all about it if I find something really interesting so we can me amazed and nerd our together.
 
-#### My Credentials
-Head data manager of Pricing at Funko, using Excel & SQL Server for all of Funko’s 1,000s of customers and 10,000s products. Analysed the current Pricing data for Senior Management, creating data visualisations and pivot tables to direct the pricing strategy for Funko Europe. Created pricing templates to streamline pricing processes for the entire Sales & CS department. Using Excel’s VBA coding, Pivot tables, vlookups and calculations with iferror statements.
+## My Credentials
+![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/funko-logo%20small.png)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Excel%20Logo4.png)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/SQL%20server%20logo%20small.jpg)
+* Pricing at Funko, manage and ensure the data integrity for Pricing at Funko Europe.
+* I use Excel & SQL Server to manipulate and clean Funko's pricing data to make sure that pricing in Funko is as efficient as possible for all of Funko’s 1,000s of customers and 10,000s products. 
+* Analysed the current Pricing data for Senior Management and sales managers, creating data visualisations, pivot tables and found key areas that we can improve on and have actioned them. 
+* Created pricing templates to streamline pricing processes for the entire Sales & CS department. Using Excel’s VBA coding, Pivot tables, vlookups and calculations with iferror statements.
+* Due to the nature of pricing as you have said before I manage the data for all our customers, managing stakeholder relations in the entire department for sales, order-entry, CS, Product and Softline. 
 
-Have a masters in Economics with distinction. Using OLS regression models with panel data created an economic model measuring the link between economic growth and national currencies. Was able to create a model that was statistically significant and homoscedastic.
+#### University of Greenwich, MSc Economics & Finance, Distinction                      
+* Using OLS regression models with panel data created an economic model measuring the link between economic growth and national currencies. Was able to create a model that was statistically significant and homoscedastic.
 
 # [Converting Casual Riders to Members Riders: Chicago Bike Data](https://github.com/Offthecharts89/Chicago-Bike-Data-Project)
 ![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Excel%20Logo4.png)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/R%20Logo%20small.png)
-### Summary
+## Summary
 * Working with dataset with 100 million datapoints.  
 * Tasked by the marketing team of Cyclistic to do an exploratory analysis of their user’s bike data. 
 * Giving recommendation from my analysis of how Cyclistic can convert their casual users to full members to increase revenue, as it was previously concluded by Cyclist’s finance team that member riders are the bulk of their revenue and that they should increase the number of member riders.
@@ -53,7 +59,7 @@ Casual Riders are much more seasonal in their behaviour. The weather plays a big
 
 # [Master's Dissertation on Economic Growth and National Currencies](https://github.com/Offthecharts89/Master-s-Dissertation-On-Economic-Growth-National-Currencies)
 ![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Excel%20Logo4.png)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Stata%20Logo%20small.png)
-### Summary
+## Summary
 
 * created and wrote the code for economic models using panel data, running a OLS linear regression. Also used Pivot tables to find relationships and trends between the two nations economic performance.   
 * Researching the current literature and  on the current account balance and national currencies on economic growth in the UK and Japan.
@@ -71,6 +77,7 @@ Would Stabilizing National Currencies Link to Higher Economic Growth?
 
 My plan was to compare the two countries of the United Kingdom and Japan. In terms of their GDP per capita and how sensitive their economies are to current account and exchange rate shocks. 
 
+### Empirical Results
 I ran a pooled OLS with lag independent variables to solve for the autoregression problem. My first model I had put all my independant variables to a lag of 1. I came up with some interesting results. I later decided to run a robust regression to lower the influence of any outliers in my data and resulted in a higher R-squared value. 
 ![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Uk%20data.png)
 ![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Japan%20Data_REC.png)
@@ -91,7 +98,7 @@ From the data analysis it was shown that even though the Japanese economy was le
 # [Creating a Dashboard for a HR Company in the UK](https://github.com/Offthecharts89/Dashboard-for-a-HR-Company)
 ![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Excel%20Logo4.png)
 
-### Summary
+## Summary
 * Was tasked to create an interactive dashboard from last year's data on cases.
 * Asked to remain anonimous but was very kind and let me show the work I had done for them.
 * Scrubbed, cleaned and created a Dashboard using pivot tables 
