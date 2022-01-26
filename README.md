@@ -9,7 +9,7 @@ My name is Oddie I’m out there and wear my heart on my sleeve, coming from Mon
 If you don’t find me working out your gonna find me nerding out about the world. Knowing your history and a good story is all I live for. Exploring the hidden world inside a page or a dataset that only you can see it one of the most exhilarating things to me and yes I’m going to want to tell you all about it if I find something really interesting so we can me amazed and nerd our together.
 
 ### My Credentials
-![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/funko-logo%20small.png)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Excel%20Logo4.png)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/SQL%20server%20logo%20small.jpg)
+![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Funko%20maskot%20small.jpg)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/funko-logo%20small.png)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Excel%20Logo4.png)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/SQL%20server%20logo%20small.jpg)
 * Pricing at Funko, manage and ensure the data integrity for Pricing at Funko Europe.
 * I use Excel & SQL Server to manipulate and clean Funko's pricing data to make sure that pricing in Funko is as efficient as possible for all of Funko’s 1,000s of customers and 10,000s products. 
 * Analysed the current Pricing data for Senior Management and sales managers, creating data visualisations, pivot tables and found key areas that we can improve on and have actioned them. 
