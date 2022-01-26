@@ -100,5 +100,5 @@ From the data analysis it was shown that even though the Japanese economy was le
 #### Dashboard:
 ![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/HR_dashboard_REC.png)
 
-#### Raw Data
+#### Raw Data:
 ![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/HR%20Raw%20Data%20small.png)
