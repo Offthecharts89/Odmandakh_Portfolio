@@ -13,7 +13,7 @@ If you don’t find me working out your gonna find me nerding out about the worl
 ### Pricing at Funko
 ![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Funko%20maskot%20small.jpg)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/funko-logo%20small.png)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Excel%20Logo4.png)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/SQL%20server%20logo%20small.jpg)
 * I manage and ensure the data integrity for Pricing at Funko Europe.
-* I use Excel & SQL Server to manipulate and clean Funko's pricing data to make sure that pricing in Funko is as efficient as possible for all of Funko’s 1,000s of customers and 10,000s products. Lowering response times from 2 weeks to 2-3 days!
+* I use Excel & SQL Server to manipulate and clean Funko's pricing data, ensuring that pricing in Funko is as efficient as possible for all of Funko’s 1,000s of customers and 10,000s products. Lowering response times from 2 weeks to 2-3 days!
 * Analysed the current Pricing data for Senior Management and sales managers, creating data visualisations, pivot tables and found key opportunities in FOB, Ex works and customer pricing saving £1,000,000s!
 * Created pricing templates to streamline pricing processes for the entire Sales & CS department. Using Excel’s VBA coding, Pivot tables, vlookups and calculations with iferror statements. Lowered the number of back and forth emails to 1. 
 * Due to the nature of pricing I manage the data for all our customers, managing stakeholder relations in the entire department for sales, finance, order-entry, Customer Services, Product and Softline. 
