@@ -8,19 +8,20 @@ My name is Oddie I’m out there and wear my heart on my sleeve, coming from Mon
 ### Who am I?
 If you don’t find me working out your gonna find me nerding out about the world. Knowing your history and a good story is all I live for. Exploring the hidden world inside a page or a dataset that only you can see it one of the most exhilarating things to me and yes I’m going to want to tell you all about it if I find something really interesting so we can me amazed and nerd our together.
 
-### My Credentials
+## My Credentials
+
+### Pricing at Funko, manage and ensure the data integrity for Pricing at Funko Europe.
 ![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Funko%20maskot%20small.jpg)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/funko-logo%20small.png)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Excel%20Logo4.png)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/SQL%20server%20logo%20small.jpg)
-#### Pricing at Funko, manage and ensure the data integrity for Pricing at Funko Europe.
 * I use Excel & SQL Server to manipulate and clean Funko's pricing data to make sure that pricing in Funko is as efficient as possible for all of Funko’s 1,000s of customers and 10,000s products. Lowering response times from 2 weeks to 2-3 days!
 * Analysed the current Pricing data for Senior Management and sales managers, creating data visualisations, pivot tables and found key opportunities in FOB, Ex works and customer pricing saving £1,000,000s!
 * Created pricing templates to streamline pricing processes for the entire Sales & CS department. Using Excel’s VBA coding, Pivot tables, vlookups and calculations with iferror statements. Lowered the number of back and forth emails to 1. 
 * Due to the nature of pricing I manage the data for all our customers, managing stakeholder relations in the entire department for sales, finance, order-entry, Customer Services, Product and Softline. 
 
-#### University of Greenwich, MSc Economics & Finance, Distinction
+### University of Greenwich, MSc Economics & Finance, Distinction
 ![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Excel%20Logo4.png)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Stata%20Logo%20small.png)
 * Using OLS regression models with panel data created an economic model measuring the link between economic growth and national currencies. Was able to create a model that was statistically significant and homoscedastic.
-#### [Google's Data Analytics Professional Certificate](https://www.credly.com/badges/b5ceea7a-31c6-4f30-b732-50d35219b46f?source=linked_in_profile)
-![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/google-data-analytics-professional-certificate.1%20small.png)
+### [Google's Data Analytics Professional Certificate](https://www.credly.com/badges/b5ceea7a-31c6-4f30-b732-50d35219b46f?source=linked_in_profile)
+![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/google-data-analytics-professional-certificate.1%20small.png)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/R%20Logo%20small.png)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Google%20sheets%20logo%20small.png)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Google-BigQuery%20logo%20small.png)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Tableau-Logo%20small.jpg)
 
 * Completed extensive six month job-ready Google Career Certificate training. Demonstrated hands-on experience with data cleaning, data visualisation, project management, interpreting and communicating data analytics findings. Confidence in transforming complex data into actionable and clear insights. Fluency in computer languages and a solid understanding of databases.
 
