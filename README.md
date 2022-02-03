@@ -8,7 +8,7 @@ My name is Oddie I’m out there and I wear my heart on my sleeve, coming from M
 Let’s Jump on an initial 10-minute call (free of charge), so that we can discuss your project in more detail and identify how my skillset will work best for you and provide immense value to your organization as well. PHONE: +44 7881046478
 
 ### Who am I?
-If you don’t find me working out your gonna find me nerding out about the world. Knowing our history and a good story is all I live for. Exploring the hidden world inside a page or a dataset that only you can see - is one of the most exhilarating things to me and yes I’m going to want to tell you all about it if I find something really interesting so we can me amazed and nerd out together.
+If you don’t find me working out your gonna find me nerding out about the world. Knowing our history and a good story is all I live for. Exploring the hidden world inside a page or a dataset that only you can see is one of the most exhilarating things to me. Yes, I’m going to want to tell you all about it if I find something really interesting so we can me amazed and nerd out together.
 
 ## My Credentials
 
