@@ -29,7 +29,7 @@ If you don’t find me working out your gonna find me nerding out about the worl
 * Using OLS regression models with panel data created an economic model measuring the link between economic growth and national currencies. Was able to create a model that was statistically significant and homoscedastic.
 
 ### Google's Data Analytics Professional Certificate, [Verify](https://www.credly.com/badges/b5ceea7a-31c6-4f30-b732-50d35219b46f?source=linked_in_profile)
-![](Images/google-data-analytics-professional-certificate.1%20small.png)![](Images/R%20Logo%20small.png)![](Images/Google%20sheets%20logo%20small.png)![](Images/Google-BigQuery%20logo%20small.png)![](Images/Tableau-Logo%20small.jpg)
+![](Images/google-data-analytics-professional-certificate.1%20small.png)![](Images/R%20Logo%20small.png)![](Images/Google%20sheets%20logo%20small.png)![](Images/Google-BigQuery%20logo%20small.png)
 
 * Completed extensive six month job-ready Google Career Certificate training. Demonstrated hands-on experience with data cleaning, data visualisation, project management, interpreting and communicating data analytics findings. Confidence in transforming complex data into actionable and clear insights. Fluency in computer languages and a solid understanding of databases.
 
