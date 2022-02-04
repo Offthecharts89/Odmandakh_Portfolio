@@ -8,7 +8,7 @@ My name is Oddie I’m out there and I wear my heart on my sleeve, coming from M
 Let’s Jump on an initial 10-minute call (free of charge), so that we can discuss your project in more detail and identify how my skillset will work best for you and provide immense value to your organization as well. 
 
 #### Phone: +44 7881046478
-#### Email: [OD.Jamiyansuren@gmail.com](OD.Jamiyansuren@gmail.com)
+#### Email: OD.Jamiyansuren@gmail.com
 #### Linkedin:  [https://www.linkedin.com](https://www.linkedin.com/in/odmandakh-jamiyansuren-05519b139/)
 
 ### Who am I?
