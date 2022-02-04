@@ -8,15 +8,15 @@ My name is Oddie I’m out there and I wear my heart on my sleeve, coming from M
 Let’s Jump on an initial 10-minute call (free of charge), so that we can discuss your project in more detail and identify how my skillset will work best for you and provide immense value to your organization as well. 
 
 #### Phone: +44 7881046478
-#### Email: OD.Jamiansuren@gmail.com
-#### Linkedin:  https://www.linkedin.com/in/odmandakh-jamiyansuren-05519b139/
+#### Email: [OD.Jamiyansuren@gmail.com](OD.Jamiyansuren@gmail.com)
+#### Linkedin:  [https://www.linkedin.com](https://www.linkedin.com/in/odmandakh-jamiyansuren-05519b139/)
 
 ### Who am I?
 If you don’t find me working out your gonna find me nerding out about the world. Knowing our history and a good story is all I live for. Exploring the hidden world inside a page or a dataset that only you can see is one of the most exhilarating things to me. Yes, I’m going to want to tell you all about it if I find something really interesting so we can be amazed and nerd out together.
 
 ## My Credentials
 
-### Pricing at Funko
+### [Pricing at Funko](https://funkoeurope.com/)
 ![](Images/Funko%20maskot%20small.jpg)![](Images/funko-logo%20small.png)![](Images/Excel%20Logo4.png)![](Images/SQL%20server%20logo%20small.jpg)
 * I manage and ensure the data integrity for Pricing at Funko Europe.
 * I use Excel & SQL Server to manipulate and clean Funko's pricing data, ensuring that pricing in Funko is as efficient as possible for all of Funko’s 1,000s of customers and 10,000s products. Lowering response times from 2 weeks to 2-3 days!
@@ -43,7 +43,7 @@ If you don’t find me working out your gonna find me nerding out about the worl
 * My analysis was that casual riders value fun, warm weather and the weekends. Casual riders go on longer rides on average and median. While members are more consistent. Going to work, they use it as a mode of transportation. 
 * I advised the marketing team to create a weekend and summer deal. We can have them as bi-annual members or weekend member. This will create a sales funnel for casual riders to eventually become full members. 
 * I gave further recommendations to market the warm weather and having fun, as casual riders value these metrics the most, using social media, their own built in app and on their bikes. 
-* (For the full report you can download it above or click the link in the title)
+* (For the full report you can click the title)
 
 ### Aggregated the data and performed calculations to find relationships or trends.
 ![](Images/calctable.png)
@@ -80,7 +80,7 @@ Casual Riders are much more seasonal in their behaviour. The weather plays a big
 * Researching the current literature and  on the current account balance and national currencies on economic growth in the UK and Japan.
 * Concluding that economies would have to have an approach that would limit large fluctuations in their current account balance and their exchange rates themselves, rather than having a policy that can absorb the shocks.
 * Achieved a Model that was Statistically significant and homoscedastic
-* (For the full report you can download it above or click the link in the title)
+* (For the full report you can click the title)
 
 ### Research Question
 
@@ -117,7 +117,7 @@ From the data analysis it was shown that even though the Japanese economy was le
 * Was tasked to create an interactive dashboard from last year's data on cases.
 * Asked to remain anonimous but was very kind and let me show the work I had done for them.
 * Scrubbed, cleaned and created a Dashboard using pivot tables 
-* (For the excel file, you can download it above or click the link in the title)
+* (To download the excel file, you can click the title)
 
 #### Dashboard:
 ![](Images/HR_dashboard_REC.png)
