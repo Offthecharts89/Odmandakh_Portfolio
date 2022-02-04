@@ -1,6 +1,6 @@
 # Odmandakh's Portfolio
 Services Offered
-
+![](Images/Funko%20maskot%20small.jpg)
 # About me
 ### My Background
 My name is Oddie I’m out there and I wear my heart on my sleeve, coming from Mongolia to the UK at 9. I’ve had to tough it out and find my way. Always looking to improve my skillset and bring real value. I need to know that I have made your job easier and brought value to you or I won’t be satisfied with my work.
@@ -13,7 +13,7 @@ If you don’t find me working out your gonna find me nerding out about the worl
 ## My Credentials
 
 ### Pricing at Funko
-![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Funko%20maskot%20small.jpg)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/funko-logo%20small.png)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/Excel%20Logo4.png)![](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Images/SQL%20server%20logo%20small.jpg)
+![](Images/Funko%20maskot%20small.jpg)![](Images/funko-logo%20small.png)![](Images/Excel%20Logo4.png)![](Images/SQL%20server%20logo%20small.jpg)
 * I manage and ensure the data integrity for Pricing at Funko Europe.
 * I use Excel & SQL Server to manipulate and clean Funko's pricing data, ensuring that pricing in Funko is as efficient as possible for all of Funko’s 1,000s of customers and 10,000s products. Lowering response times from 2 weeks to 2-3 days!
 * Analysed the current Pricing data for Senior Management and sales managers, creating data visualisations, pivot tables and found key opportunities in FOB, Ex works and customer pricing saving £1,000,000s!
