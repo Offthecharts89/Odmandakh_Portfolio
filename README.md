@@ -18,11 +18,25 @@ If you don’t find me working out your gonna find me nerding out about the worl
 
 ### [Pricing at Funko](https://funkoeurope.com/)
 ![](Images/Funko%20maskot%20small.jpg)![](Images/funko-logo%20small.png)![](Images/Excel%20Logo4.png)![](Images/SQL%20server%20logo%20small.jpg)
-* I manage and ensure the data integrity for Pricing at Funko Europe.
-* I use Excel & SQL Server to manipulate and clean Funko's pricing data, ensuring that pricing in Funko is as efficient as possible for all of Funko’s 1,000s of customers and 10,000s products. Lowering response times from 2 weeks to 2-3 days!
-* Analysed the current Pricing data for Senior Management and sales managers, creating data visualisations, pivot tables and found key opportunities in FOB, Ex works and customer pricing saving £1,000,000s!
-* Created pricing templates to streamline pricing processes for the entire Sales & CS department. Using Excel’s VBA coding, Pivot tables, vlookups and calculations with iferror statements. Lowered the number of back and forth emails to 1. 
-* Due to the nature of pricing I manage the data for all our customers, managing stakeholder relations in the entire department for sales, finance, order-entry, Customer Services, Product and Softline. 
+
+#### Company:
+* Funko (NASDAQ: FNKO) is a leading pop culture lifestyle brand. Provide connection to pop culture with a product line that includes vinyl figures, apparel, board games, NFTs and accessories. As the world’s largest proprietor of licenses, entertainment enthusiasts display their fandom through the lens of Funko products. Selling to Europe’s biggest brands like Amazon, Tesco, Gamestop and EMP.
+
+#### Achievements:
+* Cleared £ 2,000,000 on order holds in my first 2 months. Speeding up transactions and communications.
+*  Analysed the current pricing data - improving our margins saving the company £100,000s.
+*  Analysed the current pricing data for senior management, creating data visualisations, pivot tables and found key opportunities in FOB, Ex works and customer pricing. 
+*  Created pricing templates to streamline pricing processes for the entire Sales & CS department - lowering the number of back-and-forth emails down to 1.
+
+
+#### Responsibilities:
+* Managing Pricing data using Excel & SQL Server for all of Funko’s 1,000s of customers and 10,000s products.
+* I manipulate and clean our pricing data to make sure that pricing in our organization is as efficient as possible
+* Made sure to keep our pricing EMEA inbox consistently below 5 in end of workday with next to no errors in our part. 
+*  Ensure that all pricing operations in Funko are smooth and without error.
+* Had a major impact on Funko’s operations and was a big help in Funko’s pricing increase and ensured that the process was done as smoothly as possible.
+* Managing stakeholder relations holder relations, ensuring smooth pricing operations in the entire sales, finance, CS, product, Softline and order entry department.
+
 
 ### University of Greenwich, MSc Economics & Finance, Distinction
 ![](Images/Excel%20Logo4.png)![](Images/Stata%20Logo%20small.png)
