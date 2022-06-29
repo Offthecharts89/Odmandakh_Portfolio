@@ -5,7 +5,7 @@
 ### My Background
 I am a data engineering solutions architect with expertise in data architecture and statistics. I focus on developing end-to-end data solutions that help to take data from raw format into data products and analytics.
 
-I have delivered on projects for clients across Energy, Consumer Goods, Recruitment, and Technology.
+I have delivered on projects for clients across Energy, Consumer Goods, Recruitment, Real Estate and Technology.
 
 My name is Oddie I’m out there and I wear my heart on my sleeve, coming from Mongolia to the UK at 9. I’ve had to tough it out and find my way. Always looking to improve my skillset and bring real value. I need to know that I have made your job easier and brought value to you or I won’t be satisfied with my work.
 
