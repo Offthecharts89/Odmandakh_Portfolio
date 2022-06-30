@@ -1,0 +1,185 @@
+
+Sub Haltlowstock()
+'
+'
+'
+
+'Auto filter to find the low-stock or out of stock SKU
+    ActiveSheet.Range("$A$1:$C$3000").AutoFilter Field:=2, Criteria1:= _
+        "=low_stock", Operator:=xlOr, Criteria2:="=out_of_stock"
+    
+    ' Copy and paste into sheet1 so you can safely use a xlookup/vlookup later in the macro
+    Range("C2").Select
+    Range(Selection, Selection.End(xlDown)).Select
+    Selection.Copy
+    
+    Sheets("Sheet1").Select
+    Range("A1").Select
+    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+        :=False, Transpose:=False
+    
+    'Insert column and do a vlookup formula to (using sheet1) to find out which campsign names are out of stock or low stock.
+    Sheets("PPC Bulk File").Select
+    Columns("K:K").Select
+    
+    
+    Application.CutCopyMode = False
+    Selection.Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
+    Selection.NumberFormat = "General"
+    Range("K2").Select
+    ActiveCell.FormulaR1C1 = "=VLOOKUP(RC[-1],Sheet1!C[-10],1,0)"
+    Range("K2").Select
+    Selection.AutoFill Destination:=Range("K2:K400000")
+    Range("K2:K400000").Select
+    ActiveSheet.Range("$A$1:$AR$400000").AutoFilter Field:=11, Criteria1:="<>#N/A"
+    
+    'After finding the Campaign with Low stock or out of stock replace save in the campaign budget save sheet ( this is so you can revert it back to what it was before later)
+    Columns("J:J").Select
+    Selection.Copy
+    Sheets("Campaign Budget Save").Select
+    Columns("A:A").Select
+    ActiveSheet.Paste
+    Sheets("PPC Bulk File").Select
+    Columns("V:V").Select
+    Application.CutCopyMode = False
+    Selection.Copy
+    Sheets("Campaign Budget Save").Select
+    Columns("B:B").Select
+    ActiveSheet.Paste
+    
+    'after saving the budgets save all budgets that are low stock or out of stock, Set new budget for those campaigns to $1
+    Sheets("Sheet1").Select
+    Range("H1").Select
+    Selection.Copy
+    Sheets("PPC Bulk File").Select
+    Range("V55").Select
+    Range(Selection, Selection.End(xlDown)).Select
+    ActiveSheet.Paste
+    Range("V55").Select
+    
+    ' as there are formula save as value so that the numbers are values rather than formula - need this for the upload
+    Columns("K:K").Select
+    Application.CutCopyMode = False
+    Selection.Delete Shift:=xlToLeft
+    
+    ' now to put update in column C, this is so that Amazon know to update the current one.
+    Sheets("PPC Bulk File").Select
+    ActiveSheet.Range("$A$1:$AQ$400000").AutoFilter Field:=2, Criteria1:= _
+        "Campaign"
+    Sheets("Sheet1").Select
+    Range("I1").Select
+    Selection.Copy
+    Sheets("PPC Bulk File").Select
+    Range("C2").Select
+    Range(Selection, Selection.End(xlDown)).Select
+    ActiveSheet.Paste
+    ActiveSheet.Range("$A$1:$AQ$400000").AutoFilter Field:=2
+    Sheets("Stock Report").Select
+End Sub
+Sub Exporttoworkbook()
+
+'Defining the data types
+Dim WBName As String 'for autogenerating the file
+Dim sFileSaveName As Variant 'allow user to pick where they want to save the file.
+
+
+' Location where they have to pick the file
+Client = ActiveSheet.Range("F1")
+
+'User has to pick client name for correct filing
+
+If Range("F1") = "" Then
+MsgBox "Please Pick a Client"
+    Exit Sub
+End If
+
+'we only need to upload the campaign row
+    Sheets("PPC Bulk File").Select
+    ActiveSheet.Range("$A$1:$AP$400000").AutoFilter Field:=2, Criteria1:= _
+        "Campaign"
+    Range("A1").Select
+    Range(Selection, Selection.End(xlDown)).Select
+    Range(Selection, Selection.End(xlToRight)).Select
+    Selection.Copy
+    Sheets("PPC Bulk File Export").Select
+    Range("A1").Select
+    ActiveSheet.Paste
+    Sheets("PPC Bulk File").Select
+    ActiveSheet.Range("$A$1:$AQ$400000").AutoFilter Field:=2
+    
+
+'Saveto = Application.ActiveWorkbook.Path - Commented Out
+y = Year(Now)
+M = Month(Now)
+D = Day(Now)
+H = Hour(Now)
+I = Minute(Now)
+s = Second(Now)
+DDate = "Restock Bulk_File" & "_" & y & "_" & M & "_" & D & "_" & H & "_" & I & "_" & s
+WBName = Client & " - " & DDate
+
+sFileSaveName = Application.GetSaveAsFilename(InitialFileName:=WBName, fileFilter:="Excel File(*.xlsx),*.xlsx")
+
+    Sheets("PPC Bulk File Export").Select
+    Sheets("PPC Bulk File Export").Copy
+    
+    If sFileSaveName <> False Then
+    
+    'ChDir sFileSaveName
+    
+    ActiveWorkbook.SaveAs sFileSaveName
+    
+    'Filename:=sFileSaveName & "\" & WBName & ".xlsx", _
+        FileFormat:=xlOpenXMLWorkbook, CreateBackup:=False
+    
+    End If
+    
+MsgBox "Your file has been saved to " & sFileSaveName & vbNewLine & vbNewLine & "File Name: " & WBName, , "Export Successful"
+End Sub
+Sub ExportCampaignBudgetSave()
+
+'Defining the data types
+Dim WBName As String 'for autogenerating the file
+Dim sFileSaveName As Variant 'allow user to pick where they want to save the file.
+
+' Location where they have to pick the file
+Client = ActiveSheet.Range("F1")
+
+'User has to pick client name for correct filing
+
+If Range("F1") = "" Then
+MsgBox "Please Pick a Client"
+    Exit Sub
+End If
+
+'Saveto = Application.ActiveWorkbook.Path - Commented Out
+
+y = Year(Now)
+M = Month(Now)
+D = Day(Now)
+H = Hour(Now)
+I = Minute(Now)
+s = Second(Now)
+DDate = "Campaign Budget Save" & "_" & y & "_" & M & "_" & D & "_" & H & "_" & I & "_" & s
+WBName = Client & " - " & DDate
+
+sFileSaveName = Application.GetSaveAsFilename(InitialFileName:=WBName, fileFilter:="Excel File(*.xlsx),*.xlsx")
+
+
+    Sheets("Campaign Budget Save").Select
+    Sheets("Campaign Budget Save").Copy
+    
+    If sFileSaveName <> False Then
+    
+    'ChDir sFileSaveName
+    
+    ActiveWorkbook.SaveAs sFileSaveName
+    
+    'Filename:=sFileSaveName & "\" & WBName & ".xlsx", _
+        FileFormat:=xlOpenXMLWorkbook, CreateBackup:=False
+    
+    End If
+    
+    
+MsgBox "Your file has been saved to " & sFileSaveName & vbNewLine & vbNewLine & "File Name: " & WBName, , "Export Successful"
+End Sub
