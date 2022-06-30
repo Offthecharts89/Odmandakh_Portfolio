@@ -1,0 +1,650 @@
+
+Sub BuildDatabase()
+
+Application.EnableEvents = False
+
+Dim t&
+
+If Range("NR_Budget") = "" Then
+MsgBox "Please enter a BUDGET amount and click Build Database Again.", , "User Error"
+
+Exit Sub
+
+ElseIf Range("SD_bidauto") = "REACH-" And Range("NR_Bid") < "1" Then
+
+MsgBox "Please enter a Bid amount of at least 1 for REACH Bid automation and click Build Database Again.", , "User Error"
+Exit Sub
+End If
+
+
+Set TBLSKU = ActiveSheet.ListObjects("TBL_SKU")
+Set TBLNP = ActiveSheet.ListObjects("TBL_NP")
+Set TBLKW = ActiveSheet.ListObjects("TBL_KW")
+Set TBLBIDS = wsBids.ListObjects("TBL_Bids").DataBodyRange
+
+
+
+TTLRow = TBLSKU.ListRows.Count
+
+For x = 1 To TBLSKU.ListRows.Count
+
+ Range("NR_SKU") = TBLSKU.DataBodyRange(x, 1)
+ Range("NR_ProductName") = TBLSKU.DataBodyRange(x, 2)
+ 
+ If TBLSKU.DataBodyRange(x, 2) = "" Then
+ MsgBox "A Product Name is not entered for " & Range("NR_SKU") & " in the Sku Table." & vbNewLine & vbNewLine & "The script will exit."
+ wsBuilder.Activate
+ Application.EnableEvents = True
+ Exit Sub
+ End If
+ 
+ 'BID SELECTION.
+ 'If Checkbox1 is ticked then vlookup to TBL_Bids
+ 
+ If Range("NR_DefaultBid") = True Then
+ Range("NR_Bid") = WorksheetFunction.VLookup(Range("NR_SKU"), TBLBIDS, 8, 0)
+ End If
+ 
+ 
+ 
+
+'KEYWORD TARGETTING
+    If Range("NR_Template") = "Keyword Targetting" Then
+       
+        Range("NR_Temp").Copy
+      
+        wsDB.Activate
+            If wsDB.Range("B2") = "" Then
+            Range("A2").Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+            ElseIf wsDB.Range("B2") <> "" Then
+            LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+            End If
+        'Bidding Strategy Loop for Keyword targetting
+        If Range("BS") <> "" And Range("PT") = "" Then
+        Range("NR_7").Copy
+        wsDB.Activate
+        LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+        Cells(LastRow, 1).Select
+        Selection.PasteSpecial Paste:=xlPasteValues
+        End If
+        
+        If Range("BS") <> "" And Range("PT") = "placementProductPage" Then
+        Range("NR_7.1").Copy
+        wsDB.Activate
+        LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+        Cells(LastRow, 1).Select
+        Selection.PasteSpecial Paste:=xlPasteValues
+        
+        ElseIf Range("BS") <> "" And Range("PT") = "placementTop" Then
+        Range("NR_7.2").Copy
+        wsDB.Activate
+        LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+        Cells(LastRow, 1).Select
+        Selection.PasteSpecial Paste:=xlPasteValues
+        
+        End If
+       
+      'Second Loop for Negative Phrase
+      NP = 1
+      For NP = 1 To TBLNP.ListRows.Count
+      Range("NR_NegPhrase") = TBLNP.DataBodyRange(NP, 1)
+      Range("NR_NP").Copy
+      wsDB.Activate
+      LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+      Cells(LastRow, 1).Select
+      Selection.PasteSpecial Paste:=xlPasteValues
+      Next
+      
+      'Third Loop for Broad KeyWord
+      Range("NR_1").Copy
+      wsDB.Activate
+      LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+      Cells(LastRow, 1).Select
+      Selection.PasteSpecial Paste:=xlPasteValues
+      
+      B = 1
+       For B = 1 To TBLKW.ListRows.Count
+      Range("NR_Keyword") = TBLKW.DataBodyRange(B, 1)
+      Range("NR_2").Copy
+      wsDB.Activate
+      LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+      Cells(LastRow, 1).Select
+      Selection.PasteSpecial Paste:=xlPasteValues
+      Next
+      
+        'Fourth Loop for Phrase Keyword
+        Range("NR_3").Copy
+        wsDB.Activate
+        LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+        Cells(LastRow, 1).Select
+        Selection.PasteSpecial Paste:=xlPasteValues
+        
+        P = 1
+        For P = 1 To TBLKW.ListRows.Count
+        Range("NR_Keyword") = TBLKW.DataBodyRange(P, 1)
+        Range("NR_4").Copy
+        wsDB.Activate
+        LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+        Cells(LastRow, 1).Select
+        Selection.PasteSpecial Paste:=xlPasteValues
+        Next
+        
+        'Fifth Loop for Exact Keyword
+        Range("NR_5").Copy
+        wsDB.Activate
+        LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+        Cells(LastRow, 1).Select
+        Selection.PasteSpecial Paste:=xlPasteValues
+        
+        E = 1
+        For E = 1 To TBLKW.ListRows.Count
+        Range("NR_Keyword") = TBLKW.DataBodyRange(E, 1)
+        Range("NR_6").Copy
+        wsDB.Activate
+        LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+        Cells(LastRow, 1).Select
+        Selection.PasteSpecial Paste:=xlPasteValues
+        Next
+           
+            
+'AUTO CAMPAIGN
+    ElseIf Range("NR_Template") = "Auto Campaign" Then
+        
+        Range("NR_A1").Copy
+        
+        wsDB.Activate
+            If wsDB.Range("B2") = "" Then
+            Range("A2").Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+            ElseIf wsDB.Range("B2") <> "" Then
+            LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+            End If
+            
+            'Bidding Strategy for Auto Campaign
+            If Range("BS") <> "" And Range("PT") = "" Then
+            Range("NR_A14").Copy
+            wsDB.Activate
+            LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            End If
+        
+            If Range("BS") <> "" And Range("PT") = "placementProductPage" Then
+            Range("NR_A14.1").Copy
+            wsDB.Activate
+            LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+        
+            ElseIf Range("BS") <> "" And Range("PT") = "placementTop" Then
+            Range("NR_A14.2").Copy
+            wsDB.Activate
+            LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+        
+            End If
+'_____________________________________________________________________________
+
+'CLOSE PART2  -NP
+            For Auto_NP1 = 1 To TBLNP.ListRows.Count
+            Range("NR_NegPhrase") = TBLNP.DataBodyRange(Auto_NP1, 1)
+            Range("NR_A15").Copy
+            LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            Next
+
+'CLOSE PART1
+            Range("NR_A2").Copy
+            LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+            
+ 'CLOSE PART3
+             Range("NR_A4").Copy
+            LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+'_____________________________________________________________________________
+'LOOSE Part1
+            Range("NR_A5").Copy
+            LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+'Loose Part2 - NP
+            'For Auto_NP2 = 1 To TBLNP.ListRows.Count
+            'Range("NR_NegPhrase") = TBLNP.DataBodyRange(Auto_NP2, 1)
+            'Range("NR_A6").Copy
+            'LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+            'Cells(LastRow, 1).Select
+            'Selection.PasteSpecial Paste:=xlPasteValues
+            'Next
+'Loose Part 3
+            Range("NR_A7").Copy
+            LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+'___________________________________________________________________
+            
+'SUBSTITUTES Part1
+            Range("NR_A8").Copy
+            LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+'SUBSTITUTES Part2 - NP
+            'For Auto_NP3 = 1 To TBLNP.ListRows.Count
+            'Range("NR_NegPhrase") = TBLNP.DataBodyRange(Auto_NP3, 1)
+            'Range("NR_A9").Copy
+            'LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+            'Cells(LastRow, 1).Select
+            'Selection.PasteSpecial Paste:=xlPasteValues
+            'Next
+'SUBSTITUTES Part 3
+            Range("NR_A10").Copy
+            LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+'___________________________________________________________________
+                        
+'COMPLEMENT Part1
+            Range("NR_A11").Copy
+            LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+'Sub Part2 - NP
+            'For Auto_NP4 = 1 To TBLNP.ListRows.Count
+            'Range("NR_NegPhrase") = TBLNP.DataBodyRange(Auto_NP4, 1)
+            'Range("NR_A12").Copy
+            'LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+            'Cells(LastRow, 1).Select
+            'Selection.PasteSpecial Paste:=xlPasteValues
+            'Next
+'Sub Part 3
+            Range("NR_A13").Copy
+            LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+
+'Sponsored Display
+
+'Only for PUR + REACH
+    ElseIf Range("NR_Template") = "Sponsored Display" And Range("NR_TargettingType") = "PUR-" And Range("SD_bidauto") = "REACH-" Then ' Only for REACH + PUR
+    
+    'For t = 1 To 2
+        Range("SD_1.0").Copy
+        
+        wsSDB.Activate
+            If wsSDB.Range("B2") = "" Then
+            Range("A2").Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+            ElseIf wsSDB.Range("B2") <> "" Then
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+            End If
+
+        Range("SD_2.0").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+        
+        Range("SD_3.0").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+        Range("SD_1.1").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+        
+        Range("SD_2.1").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+        
+        Range("SD_3.1").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+
+    'Next t
+   
+'  Only for PUR + CONVERSIONS
+ElseIf Range("NR_Template") = "Sponsored Display" And Range("NR_TargettingType") = "PUR-" And Range("SD_bidauto") = "CONVERSIONS-" Then ' Only for CONVERSIONS + PUR
+    
+    'For t = 1 To 2
+        Range("SD_4.0").Copy
+        
+        wsSDB.Activate
+            If wsSDB.Range("B2") = "" Then
+            Range("A2").Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+            ElseIf wsSDB.Range("B2") <> "" Then
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+            End If
+
+        Range("SD_5.0").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+        
+        Range("SD_6.0").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+        Range("SD_4.1").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+        
+        Range("SD_5.1").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+        
+        Range("SD_6.1").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+
+'  Only for VIEWS + REACH
+ElseIf Range("NR_Template") = "Sponsored Display" And Range("NR_TargettingType") = "VIEWS-" And Range("SD_bidauto") = "REACH-" Then ' Only for REACH + VIEWS
+    
+    'For t = 1 To 2
+        Range("SD_7.0").Copy
+        
+        wsSDB.Activate
+            If wsSDB.Range("B2") = "" Then
+            Range("A2").Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+            ElseIf wsSDB.Range("B2") <> "" Then
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+            End If
+
+        Range("SD_8.0").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+        
+        Range("SD_9.0").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+        Range("SD_7.1").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+        
+        Range("SD_8.1").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+        
+        Range("SD_9.1").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+
+
+'  Only for VIEWS + CONVERSIONS
+ElseIf Range("NR_Template") = "Sponsored Display" And Range("NR_TargettingType") = "VIEWS-" And Range("SD_bidauto") = "CONVERSIONS-" Then ' Only for CONVERSIONS + VIEWS
+    
+    'For t = 1 To 2
+        Range("SD_10.0").Copy
+        
+        wsSDB.Activate
+            If wsSDB.Range("B2") = "" Then
+            Range("A2").Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+            ElseIf wsSDB.Range("B2") <> "" Then
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+            End If
+
+        Range("SD_11.0").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+        
+        Range("SD_12.0").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+        Range("SD_10.1").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+        
+        Range("SD_11.1").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+        
+        Range("SD_12.1").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+
+
+' Only for VIEWS + VIEWS
+ElseIf Range("NR_Template") = "Sponsored Display" And Range("NR_TargettingType") = "VIEWS-" And Range("SD_bidauto") = "VIEWS-" Then ' Only for VIEWS + VIEWS
+    
+    'For t = 1 To 2
+        Range("SD_13.0").Copy
+        
+        wsSDB.Activate
+            If wsSDB.Range("B2") = "" Then
+            Range("A2").Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+            ElseIf wsSDB.Range("B2") <> "" Then
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+            End If
+
+        Range("SD_14.0").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+        
+        Range("SD_15.0").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+        Range("SD_13.1").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+        
+        Range("SD_14.1").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+        
+        Range("SD_15.1").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+
+' Only for PUR + VIEWS
+ElseIf Range("NR_Template") = "Sponsored Display" And Range("NR_TargettingType") = "PUR-" And Range("SD_bidauto") = "VIEWS-" Then ' Only for VIEWS + VIEWS
+    
+    'For t = 1 To 2
+        Range("SD_16.0").Copy
+        
+        wsSDB.Activate
+            If wsSDB.Range("B2") = "" Then
+            Range("A2").Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+            ElseIf wsSDB.Range("B2") <> "" Then
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+            End If
+
+        Range("SD_17.0").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+        
+        Range("SD_18.0").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+        Range("SD_16.1").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+        
+        Range("SD_17.1").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+        
+        Range("SD_18.1").Copy
+            LastRow = wsSDB.Cells(wsSDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+
+'PRODUCT TARGETING
+    ElseIf Range("NR_Template") = "Product Targetting" Then
+    'Sequence:
+    'Header
+    'NP - Negative Phrase Loop
+    'ASIN Loop
+    
+    'COPY Header
+        Range("NR_8").Copy
+        
+        wsDB.Activate
+            If wsDB.Range("B2") = "" Then
+            Range("A2").Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+            ElseIf wsDB.Range("B2") <> "" Then
+            LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+            End If
+            'Bidding strategy for Product Targeting
+            If Range("BS") <> "" And Range("PT") = "" Then
+            Range("NR_12").Copy
+            wsDB.Activate
+            LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            End If
+        
+            If Range("BS") <> "" And Range("PT") = "placementProductPage" Then
+            Range("NR_12.1").Copy
+            wsDB.Activate
+            LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+        
+            ElseIf Range("BS") <> "" And Range("PT") = "placementTop" Then
+            Range("NR_12.2").Copy
+            wsDB.Activate
+            LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+        
+            End If
+ 'Second Loop for Negative Phrase
+      NP = 1
+      For NP = 1 To TBLNP.ListRows.Count
+      Range("NR_NegPhrase") = TBLNP.DataBodyRange(NP, 1)
+      Range("NR_NP1").Copy
+      wsDB.Activate
+      LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+      Cells(LastRow, 1).Select
+      Selection.PasteSpecial Paste:=xlPasteValues
+      Next
+            
+ 'Third part for Ads/Ad Group   NR_ProductTemplate
+ 
+  Range("NR_10").Copy
+        
+        wsDB.Activate
+            If wsDB.Range("B2") = "" Then
+            Range("A2").Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+            ElseIf wsDB.Range("B2") <> "" Then
+            LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+            Cells(LastRow, 1).Select
+            Selection.PasteSpecial Paste:=xlPasteValues
+            
+            End If
+            
+
+'ADD ALL ASINS LINES
+    wsBuilder.Activate
+    'Calculate the number of ASINS Required for each SKU
+    Set TBLASINS = ActiveSheet.ListObjects("TBL_ASINS")
+    TTLASINS = TBLASINS.ListRows.Count
+    
+    For Asin = 1 To TTLASINS
+    AsinValue = TBLASINS.DataBodyRange(Asin, 3)
+    Range("NR_ASIN") = AsinValue
+    Range("NR_ExpressionType") = TBLASINS.DataBodyRange(Asin, 4)
+    
+'COPY TO DB
+     Range("NR_11").Copy
+     LastRow = wsDB.Cells(wsDB.Rows.Count, "B").End(xlUp).Row + 1
+     wsDB.Activate
+     Cells(LastRow, 1).Select
+     Selection.PasteSpecial Paste:=xlPasteValues
+
+    Next Asin
+'NR_ProductAsinSection
+
+ End If
+   
+
+Next x
+wsBuilder.Activate
+Range("a1").Select
+MsgBox "Process Completed.", , "Database Built"
+
+
+Application.EnableEvents = True
+End Sub
