@@ -53,7 +53,12 @@ If you don’t find me working out your gonna find me nerding out about the worl
 
 # Projects
 # Best From The Nest Data Pipeline Development and Automation
-![](Images/Excel%20Logo4.png)
+![](Images/Excel%20Logo4.png)![](Images/VBA%20Logo%20small.png)
+
+
+### [Stock Automation Project](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Stock%20Editor%20Macro.txt)
+### [Amazon's Sponsored Product & Display Strategy Builder](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Amazon's%20Sponsored%20Product%20%26%20Display%20Strategy%20Builder.txt)
+
 ## Summary
 * Built and automated the ETL Process for Amazon’s product marketing strategies. 
 * Allowing a single user to do the work of 5. 
@@ -65,7 +70,8 @@ If you don’t find me working out your gonna find me nerding out about the worl
 
 
 ### Mapped the process for each project
-(image)
+![](Images/Defined%20Process%20-%20Bulk%20File%20Editor.png)
+![](Images/Defined%20Process%20-%20Bulk%20File%20Creator.png)
 ### Heard client feedback and wrote the VBA code. 
 (image)
 Due to client confidentiality, I cannot go into specifics of the code.
