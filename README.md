@@ -52,6 +52,29 @@ If you don’t find me working out your gonna find me nerding out about the worl
 * Completed extensive six month job-ready Google Career Certificate training. Demonstrated hands-on experience with data cleaning, data visualisation, project management, interpreting and communicating data analytics findings. Confidence in transforming complex data into actionable and clear insights. Fluency in computer languages and a solid understanding of databases.
 
 # Projects
+# Best From The Nest Data Pipeline Development and Automation
+![](Images/Excel%20Logo4.png)
+## Summary
+* Built and automated the ETL Process for Amazon’s product marketing strategies. 
+* Allowing a single user to do the work of 5. 
+* Managing the marketing strategy for 1,000’s items for their clients. 
+* The code would identifying which SKUs are out of stock, lowering the big budget to 1 and restoring the bid when stock arrives. 
+* Built and maintained Amazon’s ETL upload bulk file creator for Sponsored Display and Sponsored Product strategies. 
+* Allowing a single person to create the marketing strategy for 1,000s of items. 
+* Communicated technical concepts to my client’s providing confidence for change. 
+
+
+### Mapped the process for each project
+(image)
+### Heard client feedback and wrote the VBA code. 
+(image)
+Due to client confidentiality, I cannot go into specifics of the code.
+(image)
+### Finished products. Currently Maintain and update the files to customer specifications.
+
+
+
+
 # [Converting Casual Riders to Members Riders: Chicago Bike Data](https://github.com/Offthecharts89/Chicago-Bike-Data-Project)
 ![](Images/Excel%20Logo4.png)![](Images/R%20Logo%20small.png)
 ## Summary
