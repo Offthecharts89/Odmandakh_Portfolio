@@ -93,13 +93,27 @@ Due to client confidentiality, I cannot go into specifics of the code.
 * After multiple rounds of testing, ended with a product that was fast and would not crash! (This was the main issue my client had before my help)
 * Created a video series for my client to refer to and train new employees.
 
-## Mapped the process
-(image)
-Due to technicalities of the data. Was taught on how combustion engine and steam engines work. Allowing me to identify when the data was good and needed to be visualised.
+## Project Mapping
+
+![](Images/project%20mapping.png)
+
+Due to technicalities of the data. I was taught on how combustion engine and steam engines work. Allowing me to identify when the data was good and needed to be visualised and when the data was dirty and needed to be ignored or cleaned.
+
+### Worked closely with client's engineers on design, features and testing.
+
+built and wrote scripts for the project.
+
+ ![](Images/Design.png)
 
 ### Testing with further updates to make it so that anyone can use the model. Ensuring the model is robust and accurate.
 
+Increased efficiency by turning background calculations of when running. Reviewed all queries and code to streamline all processes so that the model would run as smoothly as possible. 
 
+ 
+
+### Finished Product
+
+![](Images/SMS%20Energy%20Logo.png)
 
 # [Converting Casual Riders to Members Riders: Chicago Bike Data](https://github.com/Offthecharts89/Chicago-Bike-Data-Project)
 ![](Images/Excel%20Logo4.png)![](Images/R%20Logo%20small.png)
