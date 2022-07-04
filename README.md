@@ -107,7 +107,7 @@ built and wrote scripts for the project.
 
 
 ![](Images/sms%20visuals%20small.png)
-### Testing with further updates to make it so that anyone can use the model. Ensuring the model is robust and accurate.
+### Testing for user friendliness so that anyone can use the model. Ensuring the model is robust and accurate.
 
 Increased efficiency by turning background calculations of when running. Reviewed all queries and code to streamline all processes so that the model would run as smoothly as possible. 
 
