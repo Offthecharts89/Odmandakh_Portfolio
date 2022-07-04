@@ -82,7 +82,24 @@ Due to client confidentiality, I cannot go into specifics of the code.
 ### Finished products. I currently maintain and update the files to customer needs.
 ![](Images/Best%20From%20the%20Nest%20Logo.png)
 
-# SMS Energy Engineering - Data Analysis Tool
+# [SMS Energy Engineering - Data Analysis Tool](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Template15C.xlsm)
+![](Images/Excel%20Logo4.png)![](Images/VBA%20Logo%20small.png)![](Images/SQL%20server%20logo%20small.jpg)![](Images/Power%20Query%20Logo%20small.png)
+
+## Summary
+
+* Built a data pipeline that would allow user to analyse 5 years’ worth of combustion engine and steam engine data in a matter of hours.
+* Pulling the raw data into a central location. Calculating and visualizing it at the press of a button. 
+* Using VBA & power query built tables that will show each engine’s stops and starts. Gas used, MW produced and revenue generated from each activation.
+* After multiple rounds of testing, ended with a product that was fast and would not crash! (This was the main issue my client had before my help)
+* Created a video series for my client to refer to and train new employees.
+
+## Mapped the process
+(image)
+Due to technicalities of the data. Was taught on how combustion engine and steam engines work. Allowing me to identify when the data was good and needed to be visualised.
+
+### Testing with further updates to make it so that anyone can use the model. Ensuring the model is robust and accurate.
+
+
 
 # [Converting Casual Riders to Members Riders: Chicago Bike Data](https://github.com/Offthecharts89/Chicago-Bike-Data-Project)
 ![](Images/Excel%20Logo4.png)![](Images/R%20Logo%20small.png)
