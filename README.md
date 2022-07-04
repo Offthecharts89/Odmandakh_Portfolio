@@ -103,8 +103,10 @@ Due to technicalities of the data. I was taught on how combustion engine and ste
 
 built and wrote scripts for the project.
 
- ![](Images/Design.png)
+ ![](Images/Design.png)![](Images/sms%20power%20query%20small.png)![](Images/Sms%20Macros%20small.png)
 
+
+![](Images/sms%20visuals%20small.png)
 ### Testing with further updates to make it so that anyone can use the model. Ensuring the model is robust and accurate.
 
 Increased efficiency by turning background calculations of when running. Reviewed all queries and code to streamline all processes so that the model would run as smoothly as possible. 
