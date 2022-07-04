@@ -79,7 +79,7 @@ Due to client confidentiality, I cannot go into specifics of the code.
 
 ![](Images/Bulk%20File%20Editor%20Code%20small.png)![](Images/Bulk%20File%20Creator%20Code%20small.png)
 
-### Finished products. I currently maintain and update the files to customer needs.
+### Finished products. I currently maintain and update the files to my clients needs.
 ![](Images/Best%20From%20the%20Nest%20Logo.png)
 
 # [SMS Energy Engineering - Data Analysis Tool](https://github.com/Offthecharts89/Odmandakh_Portfolio/blob/main/Template15C.xlsm)
