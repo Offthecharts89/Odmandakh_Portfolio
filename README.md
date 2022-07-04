@@ -79,10 +79,10 @@ Due to client confidentiality, I cannot go into specifics of the code.
 
 ![](Images/Bulk%20File%20Editor%20Code%20small.png)![](Images/Bulk%20File%20Creator%20Code%20small.png)
 
-### Finished products. Currently Maintain and update the files to customer specifications.
+### Finished products. I currently maintain and update the files to customer needs.
 ![](Images/Best%20From%20the%20Nest%20Logo.png)
 
-
+# SMS Energy Engineering - Data Analysis Tool
 
 # [Converting Casual Riders to Members Riders: Chicago Bike Data](https://github.com/Offthecharts89/Chicago-Bike-Data-Project)
 ![](Images/Excel%20Logo4.png)![](Images/R%20Logo%20small.png)
