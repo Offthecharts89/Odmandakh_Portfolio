@@ -73,11 +73,14 @@ If you don’t find me working out your gonna find me nerding out about the worl
 ![](Images/Defined%20Process%20-%20Bulk%20File%20Editor.png)
 ![](Images/Defined%20Process%20-%20Bulk%20File%20Creator.png)
 ### Heard client feedback and wrote the VBA code. 
-(image)
-Due to client confidentiality, I cannot go into specifics of the code.
-(image)
-### Finished products. Currently Maintain and update the files to customer specifications.
 
+Due to client confidentiality, I cannot go into specifics of the code.
+
+
+![](Images/Bulk%20File%20Editor%20Code%20small.png)![](Images/Bulk%20File%20Creator%20Code%20small.png)
+
+### Finished products. Currently Maintain and update the files to customer specifications.
+![](Images/Best%20From%20the%20Nest%20Logo.png)
 
 
 
